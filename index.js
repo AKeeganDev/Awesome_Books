@@ -1,6 +1,6 @@
 /* eslint-disable max-classes-per-file */
 import Library from './modules/library.js';
-import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
+import { DateTime } from './luxon.js';
 
 const libraryBtn = document.getElementById('LibraryBtn');
 const newBtn = document.getElementById('NewBtn');
