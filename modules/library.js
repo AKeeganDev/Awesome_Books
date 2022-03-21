@@ -16,19 +16,17 @@ export default class Library {
 
   removeButton;
 
-  static pushToStorage(obj) {
+  static pushToStorage = (obj) => {
     const stringify = JSON.stringify(obj);
     localStorage.setItem('strShelf', stringify);
   }
 
-  static displayBook(title, author, id) {
-    return `
-        <span class="title-author">"${title}" by ${author}</span>
-        <button class="removeButton" id="${id}" type="button">Remove</button>
-        `;
-  }
+  static displayBook = (title, author, id) => `
+      <span class="title-author">"${title}" by ${author}</span>
+      <button class="removeButton" id="${id}" type="button">Remove</button>
+      `;
 
-  pullFromStorage() {
+  pullFromStorage = () => {
     const parsed = JSON.parse(localStorage.getItem('strShelf'));
     let counter = this.shelf.length;
     const preShelf = [];
@@ -50,7 +48,7 @@ export default class Library {
     }
   }
 
-  updateShelf() {
+  updateShelf = () => {
     this.bookshelf = new StrShelf();
     let counter = 0;
     for (let i = 0; i < this.shelf.length; i += 1) {
@@ -64,7 +62,7 @@ export default class Library {
     Library.pushToStorage(this.bookshelf);
   }
 
-  newBook(title, author) {
+  newBook = (title, author) => {
     this.bookshelf = new StrShelf();
     const book = new Book();
     book.title = title;
@@ -73,7 +71,7 @@ export default class Library {
     this.updateShelf();
   }
 
-  removeBook(id) {
+  removeBook = (id) => {
     this.bookshelf = new StrShelf();
 
     this.frontShelf.innerHTML = '';
@@ -93,7 +91,7 @@ export default class Library {
     }
   }
 
-  setRemoveListeners() {
+  setRemoveListeners = () => {
     this.removeButton = document.querySelectorAll('.removeButton');
     this.removeButton.forEach((button) => {
       button.addEventListener('click', (e) => {
@@ -102,7 +100,7 @@ export default class Library {
     });
   }
 
-  setUpAddListener() {
+  setUpAddListener = () => {
     this.addButton.addEventListener('click', (e) => {
       e.preventDefault();
       this.newBook(this.newTitle.value, this.newAuthor.value);

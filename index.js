@@ -1,5 +1,6 @@
 /* eslint-disable max-classes-per-file */
 import Library from './modules/library.js';
+import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 const libraryBtn = document.getElementById('LibraryBtn');
 const newBtn = document.getElementById('NewBtn');
@@ -14,10 +15,10 @@ const hidden = 'hidden';
 const newStr = 'new';
 const contactStr = 'contact';
 
-function pageSetup() {
+const pageSetup = () => {
   newPage.className = hidden;
   contactPage.className = hidden;
-}
+};
 
 pageSetup();
 
@@ -39,7 +40,7 @@ libraryBtn.addEventListener('click', () => {
   contactPage.className = hidden;
 });
 
-const dt = new Date();
+const dt = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 document.getElementById('date-time').innerHTML = dt;
 
 const library = new Library();
