@@ -8,10 +8,11 @@
 - JavaScript
 
 ## Live Demo
-- Live version: NOT YET
+- Live version: 
+- > NOT AVAILABLE AT THIS TIME
 
 - Mobile version:
-> NOT YET
+> NOT AVAILABLE AT THIS TIME
 
 ## Authors
 **Aaron Keegan**
