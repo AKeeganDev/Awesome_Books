@@ -44,4 +44,5 @@ const dt = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 document.getElementById('date-time').innerHTML = dt;
 
 const library = new Library();
+library.setShelf();
 library.setUpAddListener();

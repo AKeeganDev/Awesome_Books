@@ -46,6 +46,11 @@ export default class Library {
       createdBook.id = i + 1;
       this.frontShelf.appendChild(createdBook);
     }
+    if ((Object.keys(JSON.parse(localStorage.strShelf))[0] === undefined)) {
+      this.frontShelf.innerHTML = '<div class="pre-book">'
+        + '<span>There\'s nothing worse than an empty library :-(</span>'
+        + '</div>';
+    }
   }
 
   updateShelf = () => {
@@ -109,5 +114,22 @@ export default class Library {
       this.newAuthor.value = '';
       this.setRemoveListeners();
     });
+  }
+
+  setShelf = () => {
+    if ((Object.keys(JSON.parse(localStorage.strShelf))[0] === undefined)) {
+      return;
+    }
+
+    if (localStorage.getItem('strShelf') !== undefined) {
+      const localStorageData = Object.values(JSON.parse(localStorage.getItem('strShelf')));
+
+      for (let i = 0; i < localStorageData.length; i += 1) {
+        this.shelf.unshift(localStorageData[i]);
+      }
+
+      this.pullFromStorage();
+      this.setRemoveListeners();
+    }
   }
 }
