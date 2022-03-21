@@ -9,7 +9,7 @@
 
 ## Live Demo
 - Live version: 
-- > NOT AVAILABLE AT THIS TIME
+> NOT AVAILABLE AT THIS TIME
 
 - Mobile version:
 > NOT AVAILABLE AT THIS TIME
