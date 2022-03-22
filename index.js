@@ -15,9 +15,17 @@ const hidden = 'hidden';
 const newStr = 'new';
 const contactStr = 'contact';
 
+const library = new Library();
+
 const pageSetup = () => {
   newPage.className = hidden;
   contactPage.className = hidden;
+  if (!localStorage.strShelf) {
+    return '';
+  }
+
+  library.setShelf();
+  return '';
 };
 
 pageSetup();
@@ -43,6 +51,4 @@ libraryBtn.addEventListener('click', () => {
 const dt = DateTime.now().toLocaleString(DateTime.DATETIME_MED);
 document.getElementById('date-time').innerHTML = dt;
 
-const library = new Library();
-library.setShelf();
 library.setUpAddListener();
