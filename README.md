@@ -6,10 +6,11 @@
 - HTML
 - CSS
 - JavaScript
+- Luxon (for DateTime processing) - https://moment.github.io/luxon/#/
 
 ## Live Demo
 - Live version: 
-> NOT AVAILABLE AT THIS TIME
+> https://akeegandev.github.io/Awesome_Books/
 
 - Mobile version:
 > NOT AVAILABLE AT THIS TIME
@@ -21,3 +22,12 @@
 **Judá F Teixeira**
 - GitHub: [@mrjuda](https://github.com/mrjuda "Judá Teixeira's GitHub profile")
 - LinkedIn: [@judateixeira](https://www.linkedin.com/in/judateixeira "Judá Teixeira's Linkedin profile")
+
+## 📝License
+This project is [MIT](https://github.com/mrjuda/books/blob/main/LICENSE) licensed.
+
+## Inspiration
+The inspiration for this project came from my course curriculum at Microverse.
+The study of JavaScript, Local Storage usage, Library usage, and Module usage made this a perfect project for practice.
+
+
