@@ -15,6 +15,15 @@
 - Mobile version:
 > NOT AVAILABLE AT THIS TIME
 
+##Getting Started
+>When you first load the demo site you will find a light-hearted message about your Library being empty. To Add books please follow these steps:
+>1) Click Add New located on the right-hand side of the Navigation Bar (top of page)
+>2) When the screen displays the Title and Author fields. Please document both a title and author for your book and hit add.
+>3) To check your books, click on Library located on the right-hand side of the Navigation Bar (top of Page)
+>4) To remove any books from your Library simply click the remove button.
+> If you have any books in your Library when you leave the page (or refresh) you'll find that your books are loaded and ready to go when you return.
+> Have fun!
+
 ## Authors
 **Aaron Keegan**
 - GitHub: [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile")
@@ -24,7 +33,7 @@
 - LinkedIn: [@judateixeira](https://www.linkedin.com/in/judateixeira "Judá Teixeira's Linkedin profile")
 
 ## 📝License
-This project is [MIT](https://github.com/mrjuda/books/blob/main/LICENSE) licensed.
+This project is [MIT](https://github.com/AKeeganDev/Awesome_Books/blob/ES6_implementation/LICENSE) licensed.
 
 ## Inspiration
 The inspiration for this project came from my course curriculum at Microverse.
