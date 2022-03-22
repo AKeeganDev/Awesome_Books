@@ -17,16 +17,18 @@
 
 ## Getting Started
 >When you first load the demo site you will find a light-hearted message about your Library being empty. To add books please follow these steps:
->1) Click Add New located on the right-hand side of the Navigation Bar (top of page)
->2) When the screen displays the Title and Author fields. Please document both a title and author for your book and hit add.
->3) To check your inventory of books click on Library located on the right-hand side of the Navigation Bar (top of Page)
+>1) Click "Add New" located on the right-hand side of the Navigation Bar (top of page)
+>2) The screen will now display the Title and Author fields. Please document both a title and author for your book and hit add.
+>3) To check your inventory of books click on "Library" located on the right-hand side of the Navigation Bar (top of Page)
 >4) To remove any books from your Library simply click the remove button.
-> If you have any books in your Library when you leave the page (or refresh) you'll find that your books are loaded and ready to go when you return.
+> If you have any books in your Library when you leave the page (or refresh) you'll find that your books are loaded and ready for viewing when you return.
 > Have fun!
 
 ## Authors
 **Aaron Keegan**
 - GitHub: [@akeegandev](https://github.com/akeegandev "Aaron Keegan's GitHub profile")
+- Twitter: [@AkeeganDev](https://twitter.com/AkeeganDev)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/AKeeganDev)
 
 **Judá F Teixeira**
 - GitHub: [@mrjuda](https://github.com/mrjuda "Judá Teixeira's GitHub profile")
