@@ -15,7 +15,7 @@
 - Mobile version:
 > NOT AVAILABLE AT THIS TIME
 
-##Getting Started
+## Getting Started
 >When you first load the demo site you will find a light-hearted message about your Library being empty. To Add books please follow these steps:
 >1) Click Add New located on the right-hand side of the Navigation Bar (top of page)
 >2) When the screen displays the Title and Author fields. Please document both a title and author for your book and hit add.
