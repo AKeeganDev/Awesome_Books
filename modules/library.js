@@ -16,6 +16,8 @@ export default class Library {
 
   removeButton;
 
+  bookRemoved = false;
+
   static pushToStorage = (obj) => {
     const stringify = JSON.stringify(obj);
     localStorage.setItem('strShelf', stringify);
@@ -79,7 +81,7 @@ export default class Library {
   removeBook = (id) => {
     this.bookshelf = new StrShelf();
 
-    this.frontShelf.innerHTML = '';
+    // this.frontShelf.innerHTML = '';
     this.removeButton = document.querySelectorAll('.removeButton');
     for (let i = 1; i <= this.shelf.length; i += 1) {
       if (this.shelf[i - 1].id === parseInt(id, 10)) {
@@ -100,6 +102,7 @@ export default class Library {
     this.removeButton = document.querySelectorAll('.removeButton');
     this.removeButton.forEach((button) => {
       button.addEventListener('click', (e) => {
+        this.bookRemoved = true;
         this.removeBook(e.target.id);
       });
     });
@@ -108,6 +111,7 @@ export default class Library {
   setUpAddListener = () => {
     this.addButton.addEventListener('click', (e) => {
       e.preventDefault();
+      this.bookRemoved = false;
       this.newBook(this.newTitle.value, this.newAuthor.value);
       this.pullFromStorage();
       this.newTitle.value = '';
@@ -125,7 +129,7 @@ export default class Library {
       const localStorageData = Object.values(JSON.parse(localStorage.getItem('strShelf')));
 
       for (let i = 0; i < localStorageData.length; i += 1) {
-        this.shelf.unshift(localStorageData[i]);
+        this.shelf.push(localStorageData[i]);
       }
 
       this.pullFromStorage();
